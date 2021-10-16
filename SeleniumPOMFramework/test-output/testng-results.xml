@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="4" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-14T17:12:41 IST" name="Default suite" finished-at="2021-10-14T17:19:32 IST" duration-ms="411013">
+    <groups>
+      <group name="DeletePortfolio">
+        <method signature="MyPorfolioTest.deletePortfolio(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" name="deletePortfolio" class="TestCases.MyPorfolioTest"/>
+      </group> <!-- DeletePortfolio -->
+      <group name="AddPortfolio">
+        <method signature="MyPorfolioTest.addPortfolioTest(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" name="addPortfolioTest" class="TestCases.MyPorfolioTest"/>
+      </group> <!-- AddPortfolio -->
+      <group name="Regression">
+        <method signature="MyPorfolioTest.addPortfolioTest(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" name="addPortfolioTest" class="TestCases.MyPorfolioTest"/>
+        <method signature="MyPorfolioTest.deletePortfolio(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" name="deletePortfolio" class="TestCases.MyPorfolioTest"/>
+        <method signature="MyPorfolioTest.openPorfolio(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" name="openPorfolio" class="TestCases.MyPorfolioTest"/>
+      </group> <!-- Regression -->
+      <group name="LoginTest">
+        <method signature="MyPorfolioTest.openPorfolio(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" name="openPorfolio" class="TestCases.MyPorfolioTest"/>
+      </group> <!-- LoginTest -->
+    </groups>
+    <test started-at="2021-10-14T17:12:41 IST" name="Default test" finished-at="2021-10-14T17:19:32 IST" duration-ms="411013">
+      <class name="TestCases.MyPorfolioTest">
+        <test-method signature="addPortfolioTest(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:12:44 IST" name="addPortfolioTest" data-provider="addPortfolioTestData" finished-at="2021-10-14T17:13:39 IST" duration-ms="55138" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PortfolioName=SME Stocks, Comment=SME Stock Portfolio}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at PageClasses.MyPorfolioPage.isPorfolioExists(MyPorfolioPage.java:202)
+at TestCases.MyPorfolioTest.addPortfolioTest(MyPorfolioTest.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPortfolioTest -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:13:39 IST" name="flushReports" finished-at="2021-10-14T17:13:41 IST" duration-ms="1395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method signature="addPortfolioTest(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:13:41 IST" name="addPortfolioTest" data-provider="addPortfolioTestData" finished-at="2021-10-14T17:14:20 IST" duration-ms="39013" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PortfolioName=HighGain Stocks, Comment=HighGain Stocks Portfolio}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at PageClasses.MyPorfolioPage.isPorfolioExists(MyPorfolioPage.java:202)
+at TestCases.MyPorfolioTest.addPortfolioTest(MyPorfolioTest.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPortfolioTest -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:14:20 IST" name="flushReports" finished-at="2021-10-14T17:14:24 IST" duration-ms="4249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method signature="addPortfolioTest(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:14:24 IST" name="addPortfolioTest" data-provider="addPortfolioTestData" finished-at="2021-10-14T17:15:02 IST" duration-ms="37845" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PortfolioName=BSE Stocks, Comment=BSE Stocks Portfolio}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at PageClasses.MyPorfolioPage.isPorfolioExists(MyPorfolioPage.java:202)
+at TestCases.MyPorfolioTest.addPortfolioTest(MyPorfolioTest.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPortfolioTest -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:15:02 IST" name="flushReports" finished-at="2021-10-14T17:15:02 IST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method signature="deletePortfolio(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:15:02 IST" name="deletePortfolio" data-provider="addPortfolioTestData" finished-at="2021-10-14T17:15:50 IST" duration-ms="48135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PortfolioName=SME Stocks, Comment=SME Stock Portfolio}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePortfolio -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:15:50 IST" name="flushReports" finished-at="2021-10-14T17:15:51 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method signature="deletePortfolio(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:15:51 IST" name="deletePortfolio" data-provider="addPortfolioTestData" finished-at="2021-10-14T17:17:17 IST" duration-ms="85938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PortfolioName=HighGain Stocks, Comment=HighGain Stocks Portfolio}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePortfolio -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:17:17 IST" name="flushReports" finished-at="2021-10-14T17:17:17 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method signature="deletePortfolio(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:17:17 IST" name="deletePortfolio" data-provider="addPortfolioTestData" finished-at="2021-10-14T17:18:17 IST" duration-ms="59475" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PortfolioName=BSE Stocks, Comment=BSE Stocks Portfolio}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePortfolio -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:18:17 IST" name="flushReports" finished-at="2021-10-14T17:18:21 IST" duration-ms="4233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method signature="openPorfolio(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:18:21 IST" name="openPorfolio" data-provider="getOpenPortfolioTestData" finished-at="2021-10-14T17:18:54 IST" duration-ms="33187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=Welcome1$, PageTitle=Rediff Moneywiz | My Portfolio(s), Comment=Valid Credentials, UserName=kamath.s2020@rediffmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPorfolio -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:18:54 IST" name="flushReports" finished-at="2021-10-14T17:18:55 IST" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method signature="openPorfolio(java.util.Hashtable)[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:18:55 IST" name="openPorfolio" data-provider="getOpenPortfolioTestData" finished-at="2021-10-14T17:19:28 IST" duration-ms="33377" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Password=WrongPasswordEntered, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Password, UserName=kamath.s2020@rediffmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login is failed on Portfolio Login Page]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login is failed on Portfolio Login Page
+at org.testng.Assert.fail(Assert.java:99)
+at baseClasses.PageBaseClass2.reportFail(PageBaseClass2.java:123)
+at PageClasses.PortFolioLoginPage.doLogin(PortFolioLoginPage.java:61)
+at TestCases.MyPorfolioTest.openPorfolio(MyPorfolioTest.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPorfolio -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:TestCases.MyPorfolioTest@660acfb]" started-at="2021-10-14T17:19:28 IST" name="flushReports" finished-at="2021-10-14T17:19:32 IST" duration-ms="4229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- TestCases.MyPorfolioTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
